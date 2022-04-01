@@ -1,0 +1,273 @@
+@media screen and (max-width: 850px) {
+    body.lock {
+        overflow: hidden;
+    }
+    .header__burger {
+        display: block;
+        position: relative;
+        width: 30px;
+        height: 20px;
+        z-index: 9999;
+    }
+    .header__burger:before,
+    .header__burger:after {
+        content: "";
+        background-color: #fff;
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        left: 0;
+        transition: all 0.3s ease 0s;
+    }
+    .header__burger span {
+        position: relative;
+        background-color: #fff;
+        position: absolute;
+        left: 0;
+        width: 100%;
+        height: 2px;
+        top: 9px;
+        transition: all 0.3s ease 0s;
+    }
+    .header__burger:before {
+        top: 0;
+    }
+    .header__burger:after {
+        bottom: 0;
+    }
+    .menu {
+        position: fixed;
+        top: -150%;
+        left: 0;
+        overflow: auto;
+        width: 100%;
+        height: 100%;
+        backdrop-filter: blur(8px);
+        background: rgba(17, 21, 37, .5);
+        transition: all 0.3s ease 0s;
+    }
+    .menu.active {
+        top: 0;
+    }
+    .header:before {
+        z-index: 1;
+    }
+    .menu__list {
+        display: inline-flex;
+        padding-top: 100px;
+        display: table;
+        margin: 0 auto;
+    }
+    .menu__line {
+        display: none;
+    }
+    .menu__item {
+        padding: 10px;
+        margin: 10px;
+        text-align: center;
+    }
+    .header__burger.active:before {
+        transform: rotate(45deg);
+        top: 9px;
+    }
+    .menu__link {
+        color: #fff;
+        font-size: 30px;
+    }
+    .menu__link:hover {
+        border-bottom: transparent;
+        font-size: 35px;
+    }
+    .header__burger.active:after {
+        transform: rotate(-45deg);
+        bottom: 9px;
+    }
+    .header__burger.active span {
+        transform: scale(0);
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .discord__btn {
+        margin-top: 20px;
+    }
+    .github__btn {
+        margin-top: 20px;
+    }
+    .support__btn {
+        margin-top: 20px;
+    }
+    .discord__logo {
+        display: none;
+    }
+    .github__logo {
+        display: none;
+    }
+    .support__logo {
+        display: none;
+    }
+    .discord__description {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        position: relative;
+        padding: 0;
+    }
+    .discord__description-txt1 {
+        padding: 0;
+    }
+    .discord__description-txt2 {
+        text-align: left;
+        padding: 0;
+    }
+    .discord__btn {
+        margin-left: 0px;
+    }
+    .github__description {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        position: relative;
+        padding: 0;
+    }
+    .github__description-txt1 {
+        padding: 0;
+    }
+    .github__description-txt2 {
+        padding: 0;
+    }
+    .github__btn {
+        margin-left: 0px;
+    }
+    .support__description {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        position: relative;
+        padding: 0;
+    }
+    .support__description-txt1 {
+        padding: 0;
+    }
+    .support__description-txt2 {
+        padding: 0;
+    }
+    .support__btn {
+        margin-left: 0px;
+    }
+    .video {
+        width: 100%;
+        height: 600px;
+    }
+    .discord {
+        min-height: 200px;
+        max-height: 400px;
+    }
+    .github {
+        min-height: 200px;
+        max-height: 400px;
+    }
+    .support {
+        min-height: 200px;
+        max-height: 400px;
+    }
+    .footer__logo {
+        display: none;
+    }
+    .footer__side {
+        width: 100%;
+        top: 30px;
+    }
+    .footer__developer {
+        width: 100%;
+        top: 30px;
+        left: 0;
+    }
+    .footer__developer-txt1 {
+        left: 0;
+    }
+}
+
+@media screen and (max-width: 551px) {
+    .content-left__container {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .content-left {
+        width: 100%;
+    }
+    .content-right {
+        width: 100%;
+    }
+    .content-left__container {
+        justify-content: end;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .support {
+        margin-bottom: 30px;
+    }
+}
+
+@media screen and (max-width: 440px) {
+    .footer__table-in-bound-tx1 {
+        font-size: 20px;
+    }
+    .footer__table-in-bound-tx2 {
+        font-size: 10px;
+    }
+    .footer__developer-txt1 {
+        font-size: 9px;
+    }
+    .footer__tools {
+        font-size: 9px;
+    }
+    .footer__header {
+        margin-left: 30px;
+    }
+    .video__name {
+        font-size: 40px;
+    }
+    .discord__description-txt1 {
+        font-size: 40px;
+    }
+    .github__description-txt1 {
+        font-size: 40px;
+    }
+    .support__description-txt1 {
+        font-size: 40px;
+    }
+}
+
+@media screen and (max-width: 370px) {
+    .support {
+        min-height: 200px;
+        max-height: 450px;
+    }
+    .content-left__tx1 {
+        font-size: 30px;
+        margin-bottom: 20px;
+        position: relative;
+        height: auto;
+        color: #fff;
+        text-align: center;
+    }
+    .footer__header {
+        margin-left: 45px;
+    }
+}
+
+
+/* faqs page  */
+
+@media screen and (max-width: 800px) {
+    .splitter-txt-wrapper {
+        width: 100%;
+    }
+    .splitter-img-container {
+        display: none;
+    }
+}

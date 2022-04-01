@@ -1,0 +1,942 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Wet+Paint&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap');
+* {
+    box-sizing: border-box;
+}
+
+::-webkit-scrollbar {
+    width: 8px
+}
+
+::-webkit-scrollbar-track {
+    background: #dcdcdc
+}
+
+::-webkit-scrollbar-thumb {
+    background: #a9a9a9
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    background-color: #111525;
+    color: black;
+    font-family: 'Rubik Wet Paint', cursive;
+}
+
+a {
+    color: inherit;
+}
+
+.wrapper {
+    overflow: hidden;
+}
+
+.container {
+    max-width: 1170px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+
+/* header add  */
+
+
+/* .header__burger {
+    display: none;
+} */
+
+.header {
+    z-index: 9999;
+    width: 100%;
+    position: fixed;
+}
+
+.header::before {
+    content: "";
+    position: absolute;
+    z-index: 3;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(100, 95, 95, 0.267);
+    border-bottom: 2px solid rgba(255, 255, 255, .1);
+}
+
+.header__inner {
+    z-index: 3;
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__logo {
+    z-index: 4;
+    max-width: 100%;
+}
+
+.header__logo img {
+    width: 50px;
+    height: 50px;
+    padding: 5px;
+}
+
+.menu__list {
+    display: flex;
+}
+
+.menu__item {
+    margin: 0 15px;
+    z-index: 9;
+}
+
+.menu__link {
+    color: #fff;
+    font-size: 18px;
+    line-height: 21px;
+    padding-bottom: 15px;
+    border-bottom: 2px solid transparent;
+    transition: all .5s;
+}
+
+.menu__link:hover {
+    border-bottom: 2px solid #fff;
+}
+
+
+/* content */
+
+
+/* home page  */
+
+#particles-js {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: -o-linear-gradient(225deg, #000D2A 25%, #40029A 100%);
+    background: linear-gradient(-135deg, #000D2A 25%, #40029A 100%);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+}
+
+.content {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.content-outside {
+    position: relative;
+    max-width: 1220px;
+    height: 100%;
+    margin: 0 auto;
+    z-index: 1;
+}
+
+.content-inside {
+    position: relative;
+    height: 100%;
+    margin-right: 60px;
+    margin-left: 60px;
+}
+
+.content-left {
+    position: absolute;
+    left: 0;
+    width: 47%;
+    height: 100%;
+}
+
+.content-right {
+    position: absolute;
+    right: 0;
+    width: 47%;
+    height: 100%;
+}
+
+.content-right__background {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: block;
+    opacity: .8
+}
+
+.content-left__container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.content-left__tx1 {
+    font-size: 50px;
+    margin-bottom: 20px;
+    position: relative;
+    height: auto;
+    color: #fff;
+    text-align: center;
+}
+
+.video {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 700px;
+    background: #111525;
+}
+
+.video__name {
+    font-size: 45px;
+    line-height: 64px;
+    height: 64px;
+    width: 315px;
+    margin-left: -158px;
+    left: 50%;
+    color: #5E57D7;
+    text-align: center;
+    position: absolute;
+    top: 44px;
+    z-index: 1;
+}
+
+.video__line {
+    background: -webkit-linear-gradient(-70deg, rgb(78, 52, 201), rgb(104, 109, 224));
+    height: 4px;
+    border-radius: 4px;
+    width: 50px;
+    left: 50%;
+    margin-left: -25px;
+    position: relative;
+    top: 120px
+}
+
+.fill {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-position: center center;
+    background-size: cover
+}
+
+.video__container {
+    width: 100%;
+    height: 310px;
+    display: inline-block;
+    top: 50%;
+    margin-top: -155px;
+    position: absolute
+}
+
+.video__container-center {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+}
+
+.video__container-wrapper {
+    position: relative;
+    width: 700px;
+    height: 400px;
+    z-index: 2
+}
+
+.video__img-thumbnail {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    overflow: hidden
+}
+
+.discord {
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    height: 600px;
+    min-height: 500px;
+    max-height: 700px;
+    background: #111525;
+}
+
+.discord__container {
+    height: 500px;
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    margin-top: -250px;
+}
+
+.discord__logo {
+    width: 45%;
+    height: 100%;
+    float: left;
+}
+
+.discord__logo-img {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    background: url("/assets/img/hero-discord.png") center center/400px no-repeat;
+}
+
+.discord__description {
+    width: 55%;
+    height: 100%;
+    float: right;
+    position: relative;
+}
+
+.discord__description-container {
+    height: auto;
+    width: auto;
+}
+
+.discord__description-txt1 {
+    font-size: 45px;
+    line-height: 64px;
+    height: auto;
+    padding-left: 100px;
+    color: #5E57D7;
+    margin-bottom: 20px;
+}
+
+.discord__description-line {
+    background: #5E57D7;
+    height: 4px;
+    border-radius: 4px;
+    width: 50px;
+    left: 0;
+    position: relative;
+    top: 8px;
+}
+
+.discord__description-txt2 {
+    font-family: 'Ubuntu Mono', monospace;
+    font-size: 16px;
+    line-height: 30px;
+    padding-left: 100px;
+    color: #fff;
+}
+
+.discord__btn {
+    width: 100px;
+    height: 46px;
+    border-radius: 46px;
+    margin-left: 100px;
+    margin-top: 35px;
+    background: #fff;
+    -webkit-box-shadow: rgba(0, 0, 0, .2) 0 10px 32px 0;
+    box-shadow: rgba(0, 0, 0, .2) 0 10px 32px 0;
+    cursor: pointer;
+    padding-left: 4px;
+    padding-right: 4px;
+    -webkit-transition: all .1s ease-in-out 0s;
+    -o-transition: all .1s ease-in-out 0s;
+    transition: all .1s ease-in-out 0s;
+    border: 2px solid #fff;
+}
+
+.discord__btn:hover {
+    background: #1abc9c;
+    -webkit-box-shadow: rgba(46, 204, 113, .4) 0 10px 32px 0;
+    box-shadow: rgba(46, 204, 113, .4) 0 10px 32px 0;
+    border: 2px solid #57e694!important;
+}
+
+.discord__btn:hover .discord__btn-ico {
+    background: url("/assets/img/discord-h.png") center center/24px no-repeat;
+}
+
+.discord__btn:hover .discord__btn-text {
+    color: #fff;
+}
+
+.discord__btn-ico {
+    background: url("/assets/img/discord.png") center center/24px no-repeat;
+    height: 46px;
+    width: 46px;
+    float: left;
+}
+
+.discord__btn-text {
+    float: left;
+    font-size: 16px;
+    line-height: 46px;
+    height: 100%;
+    color: #000;
+}
+
+.github {
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    height: 600px;
+    min-height: 500px;
+    max-height: 700px;
+    background: #111525;
+}
+
+.github__container {
+    height: 500px;
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    margin-top: -250px;
+}
+
+.github__logo {
+    width: 45%;
+    height: 100%;
+    float: right;
+}
+
+.github__logo-img {
+    height: 100%;
+    width: 100%;
+    background: url("/assets/img/hero-github.png") center center/contain no-repeat;
+}
+
+.github__description {
+    width: 55%;
+    height: 100%;
+    float: left;
+    position: relative;
+}
+
+.github__description-container {
+    height: auto;
+    width: auto;
+}
+
+.github__description-txt1 {
+    font-size: 45px;
+    line-height: 64px;
+    height: auto;
+    padding-left: 100px;
+    color: #5E57D7;
+    margin-bottom: 20px;
+}
+
+.github__description-line {
+    background: #5E57D7;
+    height: 4px;
+    border-radius: 4px;
+    width: 50px;
+    left: 0;
+    position: relative;
+    top: 8px;
+}
+
+.github__description-txt2 {
+    font-family: 'Ubuntu Mono', monospace;
+    font-size: 16px;
+    line-height: 30px;
+    padding-left: 100px;
+    color: #fff
+}
+
+.github__btn {
+    width: 165px;
+    height: 46px;
+    border-radius: 46px;
+    margin-left: 100px;
+    margin-top: 35px;
+    background: #fff;
+    -webkit-box-shadow: rgba(0, 0, 0, .2) 0 10px 32px 0;
+    box-shadow: rgba(0, 0, 0, .2) 0 10px 32px 0;
+    cursor: pointer;
+    padding-left: 4px;
+    padding-right: 4px;
+    -webkit-transition: all .1s ease-in-out 0s;
+    -o-transition: all .1s ease-in-out 0s;
+    transition: all .1s ease-in-out 0s;
+    border: 2px solid #fff
+}
+
+.github__btn:hover {
+    background: #1abc9c;
+    -webkit-box-shadow: rgba(46, 204, 113, .4) 0 10px 32px 0;
+    box-shadow: rgba(46, 204, 113, .4) 0 10px 32px 0;
+    border: 2px solid #57e694!important
+}
+
+.github__btn:hover .github__btn-ico {
+    background: url("/assets/img/github-h.png") center center/24px no-repeat
+}
+
+.github__btn:hover .github__btn-text {
+    color: #fff
+}
+
+.github__btn-ico {
+    background: url("/assets/img/github.png") center center/24px no-repeat;
+    height: 46px;
+    width: 46px;
+    float: left
+}
+
+.github__btn-text {
+    float: left;
+    font-size: 16px;
+    line-height: 46px;
+    height: 100%;
+    color: #000;
+}
+
+.support {
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    height: 600px;
+    min-height: 500px;
+    max-height: 700px;
+    background: #111525;
+}
+
+.support__container {
+    height: 500px;
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    margin-top: -250px;
+}
+
+.support__logo {
+    width: 45%;
+    height: 100%;
+    float: left;
+}
+
+.support__logo-img {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    background: url("/assets/img/hero-support.png") center center/400px no-repeat;
+}
+
+.support__description {
+    width: 55%;
+    height: 100%;
+    float: right;
+    position: relative;
+}
+
+.support__description-container {
+    height: auto;
+    width: auto;
+}
+
+.support__description-txt1 {
+    font-size: 45px;
+    line-height: 64px;
+    height: auto;
+    padding-left: 100px;
+    color: #5E57D7;
+    margin-bottom: 20px;
+}
+
+.support__description-line {
+    background: #5E57D7;
+    height: 4px;
+    border-radius: 4px;
+    width: 50px;
+    left: 0;
+    position: relative;
+    top: 8px;
+}
+
+.support__description-txt2 {
+    font-family: 'Ubuntu Mono', monospace;
+    font-size: 16px;
+    line-height: 30px;
+    padding-left: 100px;
+    color: #fff;
+}
+
+.support__btn {
+    width: 130px;
+    height: 46px;
+    border-radius: 46px;
+    margin-left: 100px;
+    margin-top: 35px;
+    background: #fff;
+    -webkit-box-shadow: rgba(0, 0, 0, .2) 0 10px 32px 0;
+    box-shadow: rgba(0, 0, 0, .2) 0 10px 32px 0;
+    cursor: pointer;
+    padding-left: 4px;
+    padding-right: 4px;
+    -webkit-transition: all .1s ease-in-out 0s;
+    -o-transition: all .1s ease-in-out 0s;
+    transition: all .1s ease-in-out 0s;
+    border: 2px solid #fff;
+}
+
+.support__btn:hover {
+    background: #1abc9c;
+    -webkit-box-shadow: rgba(46, 204, 113, .4) 0 10px 32px 0;
+    box-shadow: rgba(46, 204, 113, .4) 0 10px 32px 0;
+    border: 2px solid #57e694!important;
+}
+
+.support__btn:hover .support__btn-ico {
+    background: url("/assets/img/support-h.png") center center/24px no-repeat;
+}
+
+.support__btn:hover .support__btn-text {
+    color: #fff;
+}
+
+.support__btn-ico {
+    background: url("/assets/img/support.png") center center/24px no-repeat;
+    height: 46px;
+    width: 46px;
+    float: left;
+}
+
+.support__btn-text {
+    float: left;
+    font-size: 16px;
+    line-height: 46px;
+    height: 100%;
+    color: #000;
+}
+
+
+/* footer  */
+
+.footer {
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    width: 100%;
+    height: auto;
+}
+
+.footer__container {
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    width: 100%;
+    height: auto;
+    background: -o-linear-gradient(225deg, #000D2A 25%, #40029A 100%);
+    background: linear-gradient(-135deg, #000D2A 25%, #40029A 100%);
+}
+
+.footer__header {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    height: 290px;
+    padding-top: 56px;
+    padding-bottom: 50px
+}
+
+.footer__outer {
+    position: relative;
+    max-width: 1320px;
+    height: 100%;
+    margin: 0 auto
+}
+
+.footer__inner {
+    position: relative;
+    bottom: 0;
+    height: 100%;
+    margin-right: 60px;
+    margin-left: 60px
+}
+
+.footer__logo {
+    position: absolute;
+    top: -6px;
+    left: 0;
+    width: 42px;
+    height: 42px;
+    background: url("/assets/img/logo.png") center center/36px no-repeat
+}
+
+.footer__table-out {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    margin-top: 0;
+    padding: 0;
+    border-collapse: collapse
+}
+
+.footer__table-out tr:nth-child(2n+1) {
+    background: 0 0!important
+}
+
+.footer__table-out tr:last-child {
+    border-bottom: 1px solid transparent!important
+}
+
+.footer__table-out tr {
+    background: 0 0!important
+}
+
+.footer__table-out tr td {
+    position: relative;
+    height: 100%
+}
+
+.footer__table-in {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%
+}
+
+.footer__table-in-bound {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100px;
+    height: auto
+}
+
+.footer__table-in-bound-tx1 {
+    font-size: 20px;
+    line-height: 20px;
+    position: relative;
+    height: 20px;
+    margin-bottom: 16px;
+    text-align: left;
+    color: #fff;
+}
+
+.footer__table-in-bound-tx2 {
+    font-size: 14px;
+    line-height: 28px;
+    position: relative;
+    color: #fff
+}
+
+.footer__table-in-bound-tx2 a {
+    font-family: 'Ubuntu Mono', monospace;
+    color: #fff
+}
+
+.footer__table-in-bound-tx2 a:hover {
+    text-decoration: underline
+}
+
+.footer__legs {
+    display: block;
+    width: 100%;
+    height: 200px
+}
+
+.footer__line {
+    height: 2px;
+    background: rgba(255, 255, 255, .1);
+    border-radius: 2px
+}
+
+.footer__foot {
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    height: 100%
+}
+
+.footer__side {
+    width: 50%;
+    height: 70px;
+    position: relative;
+    display: inline-block;
+    float: left;
+    top: 60px
+}
+
+.footer__tools {
+    font-size: 16px;
+    position: absolute;
+    z-index: 1;
+    width: auto;
+    height: 100%;
+    color: #fff;
+    left: 0
+}
+
+.footer__tools a {
+    color: #fff
+}
+
+.footer__tools a:hover {
+    text-decoration: underline
+}
+
+.footer__tools-ico {
+    position: relative;
+    top: 16px;
+    display: inline-block;
+    width: 42px;
+    height: 42px;
+    margin-right: 6px;
+    border-radius: 100%;
+    -webkit-box-shadow: rgba(0, 0, 0, .2) 6px 6px 10px 0;
+    box-shadow: rgba(0, 0, 0, .2) 6px 6px 10px 0;
+    -webkit-backdrop-filter: blur(6px);
+    backdrop-filter: blur(6px)
+}
+
+.footer__developer {
+    width: 50%;
+    height: 70px;
+    position: relative;
+    display: inline-block;
+    float: left;
+    top: 60px
+}
+
+.footer__developer-txt1 {
+    font-size: 16px;
+    position: absolute;
+    z-index: 1;
+    width: auto;
+    height: 100%;
+    color: #fff;
+    right: 0
+}
+
+.footer__developer-txt1 a {
+    color: #fff
+}
+
+.footer__developer-txt1 a:hover {
+    text-decoration: underline
+}
+
+.footer__developer-ico {
+    position: relative;
+    top: 16px;
+    display: inline-block;
+    width: 42px;
+    height: 42px;
+    margin-right: 6px;
+    border-radius: 100%;
+    -webkit-box-shadow: rgba(0, 0, 0, .2) 6px 6px 10px 0;
+    box-shadow: rgba(0, 0, 0, .2) 6px 6px 10px 0;
+    -webkit-backdrop-filter: blur(6px);
+    backdrop-filter: blur(6px)
+}
+
+
+/* faqs page  */
+
+.page {
+    position: relative;
+    top: 0;
+    height: auto;
+    margin-bottom: 50px;
+}
+
+.banner {
+    position: relative;
+    width: 100%;
+    height: 380px;
+}
+
+.banner__title {
+    position: absolute;
+    z-index: 2;
+    top: 40%;
+    left: 50%;
+    width: 860px;
+    height: 134px;
+    margin: -37px -430px;
+}
+
+.banner__title-txt1 {
+    font-size: 30px;
+    height: 80px;
+    text-align: center;
+    justify-content: center;
+    color: #fff;
+}
+
+.banner_line {
+    background: rgba(255, 255, 255, .2);
+    height: 2px;
+    border-radius: 2px;
+    width: 50px;
+    left: 50%;
+    margin-left: -25px;
+    position: relative;
+}
+
+.banner__title-txt2 {
+    font-family: 'Ubuntu Mono', monospace;
+    font-size: 16px;
+    line-height: 50px;
+    height: 50px;
+    text-align: center;
+    color: #fff;
+    text-shadow: rgba(0, 0, 0, .5) 2px 0 16px;
+}
+
+.faqs {
+    position: relative;
+    height: auto;
+    min-height: 30px;
+}
+
+.faqs__container {
+    position: relative;
+    width: auto;
+    height: auto;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.faqs__block-txt1 {
+    font-size: 24px;
+    line-height: 26px;
+    position: relative;
+    width: 100%;
+    height: auto;
+    min-height: 26px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    text-align: left;
+    color: #ffffff;
+}
+
+.faqs__block-txt1 h2 {
+    line-height: 40px;
+}
+
+.faqs__line {
+    background: #686de0;
+    width: 4px;
+    height: 20px;
+    border-radius: 2px;
+    margin-right: 10px;
+    float: left;
+    margin-top: 10px;
+}
+
+.faqs__block-txt2 {
+    font-family: 'Ubuntu Mono', monospace;
+    font-size: 14px;
+    line-height: 26px;
+    position: relative;
+    width: 100%;
+    height: auto;
+    text-align: left;
+    color: #fff;
+}
