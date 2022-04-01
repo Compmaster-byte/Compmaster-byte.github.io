@@ -1,4 +1,4 @@
-# My sites
+# My site
 ## Site name: Tyzh_Community
 ## Url: home.tyzh.studio
-## Purpose: so that the domain does not put down... 
+## Goal: so that the domain does not stand idle... 
