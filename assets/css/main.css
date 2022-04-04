@@ -111,6 +111,46 @@ a {
 /* content */
 
 
+/* 404 */
+
+.error {
+    position: fixed;
+    z-index: 9999;
+    top: 50%;
+    left: 50%;
+    width: 500px;
+    height: 146px;
+    margin: -73px -250px
+}
+
+.error__ico {
+    position: relative;
+    width: 100%;
+    height: 60px;
+}
+
+.error__txt1 {
+    font-size: 24px;
+    line-height: 60px;
+    position: relative;
+    width: 100%;
+    height: 60px;
+    text-align: center;
+    color: #fff
+}
+
+.error__tx2 {
+    font-family: 'Ubuntu Mono', monospace;
+    font-size: 20px;
+    line-height: 24px;
+    position: relative;
+    width: 100%;
+    height: 25px;
+    text-align: center;
+    color: #fff
+}
+
+
 /* home page  */
 
 #particles-js {
