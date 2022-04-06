@@ -971,12 +971,12 @@ a {
 }
 
 .faqs__block-txt2 {
+    text-align: justify;
     font-family: 'Ubuntu Mono', monospace;
     font-size: 14px;
     line-height: 26px;
     position: relative;
     width: 100%;
     height: auto;
-    text-align: left;
     color: #fff;
 }
