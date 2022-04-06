@@ -48,7 +48,7 @@
         height: 100%;
         backdrop-filter: blur(8px);
         background: rgba(17, 21, 37, .5);
-        transition: all 0.3s ease 0s;
+        transition: all 0.5s ease 0s;
     }
     .menu.active {
         top: 0;

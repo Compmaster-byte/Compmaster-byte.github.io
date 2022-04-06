@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tyzh - 404</title>
     <link rel="shortcut icon" href="./assets/img/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="./assets/css/aos.css">
     <link rel="stylesheet" href="./assets/css/reset.css">
     <link rel="stylesheet" href="./assets/css/normalize.css">
     <link rel="stylesheet" href="./assets/css/main.css">
@@ -46,7 +47,7 @@
             <div class="content">
                 <div class="content-outside">
                     <div class="content-inside">
-                        <div class="error">
+                        <div class="error" data-aos="zoom-in" data-aos-duration="1500">
                             <div class='error__ico' style="background: url('/assets/img/404.png') no-repeat center; background-size:70px;">
                             </div>
                             <div class='error__txt1'>
@@ -62,6 +63,10 @@
                 </div>
             </div>
         </div>
+        <script src="./assets/js/aos.js"></script>
+        <script>
+            AOS.init();
+        </script>
         <script src="./assets/js/jquery.min.js" defer></script>
         <script src="./assets/js/particles.min.js" defer></script>
         <script src="./assets/js/config.js" defer></script>
