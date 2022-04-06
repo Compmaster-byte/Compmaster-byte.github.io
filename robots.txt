@@ -1,0 +1,3 @@
+User-agent: *
+Sitemap: http://tyzh.studio/sitemap.xml
+Host: tyzh.studio
