@@ -153,6 +153,30 @@ a {
 
 /* home page  */
 
+.scrolldown {
+    position: absolute;
+    z-index: 3;
+    bottom: 30px;
+    left: 50%;
+    width: 80px;
+    height: 80px;
+    margin: 0 0 0 -40px;
+    background: url("/assets/img/down.png") center center/42px no-repeat;
+    animation: arrowDown 2s infinite;
+}
+
+@keyframes arrowDown {
+    0% {
+        bottom: 10px;
+    }
+    50% {
+        bottom: 0;
+    }
+    100% {
+        bottom: 10px;
+    }
+}
+
 #particles-js {
     position: absolute;
     width: 100%;
